@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  font-family: Afacad, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  grid-column: 1 / -1;
+}
+
+.city-name {
+  text-align: center;
+  color: #221C35;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 100%;
+  background: #DBE2FF;
+  background: radial-gradient(circle,rgba(219, 226, 255, 1) 0%, rgba(219, 226, 255, 1) 100%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.weather-icon {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #221C35;
+  font-weight: bold;
+}
+
+.temperature {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #221C35;
+  font-weight: bold;
+}
